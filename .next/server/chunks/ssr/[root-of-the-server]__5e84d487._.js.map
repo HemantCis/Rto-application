@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///var/www/html/keensbuildings/rtocrmlexicon/frontend/app/components/GlobalContext.js"],"sourcesContent":["\"use client\"\n\nimport React, {\n    createContext,\n    useState,\n  } from \"react\";\n\nconst loginContext = createContext(null);\nexport { loginContext };\n\nconst GlobalContext = ({ children }) => {\n    const [saveStatus, setSaveStatus] = useState(false);\n    const [erroObj, setErrorObj] = useState({});\n\n    const contextValue = {\n        saveStatus, setSaveStatus,\n        erroObj, setErrorObj\n    };\n\nreturn (\n    <loginContext.Provider value={contextValue}>\n        {children}\n    </loginContext.Provider>\n    );\n    \n}\n\nexport default GlobalContext;"],"names":[],"mappings":";;;;;;;AAEA;AAFA;;;AAOA,MAAM,6BAAe,IAAA,sNAAa,EAAC;;AAGnC,MAAM,gBAAgB,CAAC,EAAE,QAAQ,EAAE;IAC/B,MAAM,CAAC,YAAY,cAAc,GAAG,IAAA,iNAAQ,EAAC;IAC7C,MAAM,CAAC,SAAS,YAAY,GAAG,IAAA,iNAAQ,EAAC,CAAC;IAEzC,MAAM,eAAe;QACjB;QAAY;QACZ;QAAS;IACb;IAEJ,qBACI,8OAAC,aAAa,QAAQ;QAAC,OAAO;kBACzB;;;;;;AAIT;uCAEe","debugId":null}}]
+}

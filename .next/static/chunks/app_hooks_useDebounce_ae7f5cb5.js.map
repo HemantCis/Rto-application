@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///var/www/html/keensbuildings/rtocrmlexicon/frontend/app/hooks/useDebounce.js"],"sourcesContent":["import { useEffect, useState } from \"react\";\n\nexport function useDebounce(value, delay) {\n  const [debouncedValue, setDebouncedValue] = useState(value);\n\n  useEffect(() => {\n    const handler = setTimeout(() => {\n      setDebouncedValue(value);\n    }, delay);\n\n    return () => {\n      clearTimeout(handler);\n    };\n  }, [value, delay]);\n\n  return debouncedValue;\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEO,SAAS,YAAY,KAAK,EAAE,KAAK;;IACtC,MAAM,CAAC,gBAAgB,kBAAkB,GAAG,IAAA,yKAAQ,EAAC;IAErD,IAAA,0KAAS;iCAAC;YACR,MAAM,UAAU;iDAAW;oBACzB,kBAAkB;gBACpB;gDAAG;YAEH;yCAAO;oBACL,aAAa;gBACf;;QACF;gCAAG;QAAC;QAAO;KAAM;IAEjB,OAAO;AACT;GAdgB","debugId":null}}]
+}
